@@ -11,35 +11,31 @@ title: Home
   padding: 2.2rem 1.2rem 2.8rem;
 }
 
-/* prevent odd breaks in your name */
+/* Keep your name on one line */
 .hero-text h1{
   hyphens: none;
   overflow-wrap: normal;
   word-break: keep-all;
-  white-space: nowrap; /* keep on one line */
+  white-space: nowrap;
 }
 
 /* --- HERO --- */
 .hero{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* balanced columns */
   gap: 2.6rem;
   align-items: center;
 }
 
 @media (max-width: 900px){
-  .hero{
-    grid-template-columns: 1fr;
-  }
-  .hero-text h1{
-    white-space: normal; /* allow wrap on small screens */
-  }
+  .hero{ grid-template-columns: 1fr; }
+  .hero-text h1{ white-space: normal; } /* allow wrap on small screens */
 }
 
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 700px;   /* bigger */
+  max-width: 680px;   /* bigger */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -52,7 +48,7 @@ title: Home
   display: block;
 }
 
-/* top bar like your screenshot */
+/* social bar like your screenshot */
 .social-bar{
   background: #f4ead5;
   border-radius: 10px;
@@ -116,10 +112,9 @@ title: Home
 .hero-text h1{
   margin: 0 0 0.6rem 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.6rem;
-  line-height: 1.1;
+  font-size: 2.85rem;  /* a touch bigger */
+  line-height: 1.08;
 }
-
 .hero-text p{
   margin: 0.4rem 0 0 0;
   font-size: 1.1rem;
@@ -150,62 +145,59 @@ title: Home
   color: rgba(0,0,0,0.82);
 }
 
-/* --- PHOTO GRID SECTION (NEW) --- */
-.photo-section{
-  margin-top: 2.2rem;
-}
-
-.photo-section h2{
-  margin: 0 0 1.0rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.0rem;
-}
-
+/* --- PHOTO GRID (updated to make photos bigger + remove whitespace) --- */
 .photo-grid{
+  margin-top: 2.2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem;
+  gap: 1.4rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-@media (max-width: 1100px){
-  .photo-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 1050px){
+  .photo-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media (max-width: 600px){
-  .photo-grid{
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 650px){
+  .photo-grid{ grid-template-columns: 1fr; }
 }
 
 .photo-card{
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 16px 34px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
   display: flex;
   flex-direction: column;
-  transition: transform 140ms ease, box-shadow 140ms ease;
 }
 
-.photo-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 22px 44px rgba(0,0,0,0.18);
-}
-
-.photo-card img{
+/* Fixed image window so all cards look clean on wide screens */
+.photo-img{
   width: 100%;
-  height: 320px;        /* ⬅ bigger photos */
-  object-fit: cover;    /* fills without distortion */
+  aspect-ratio: 4 / 5;      /* portrait-friendly */
+  overflow: hidden;
+  background: #eee;
+}
+
+.photo-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* removes empty space by cropping */
+  object-position: center;
   display: block;
 }
 
-.photo-caption{
-  padding: 0.9rem 1rem;
-  background: #faf6ee;
+/* Caption: consistent height, clamped lines */
+.photo-cap{
+  background: #f7f0e1;
+  padding: 0.95rem 1.05rem 1.05rem;
   font-size: 1.05rem;
-  line-height: 1.45;
-  color: rgba(0,0,0,0.85);
+  line-height: 1.35;
+  color: rgba(0,0,0,0.82);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>
 
@@ -281,43 +273,49 @@ title: Home
     <p>
       My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
     </p>
-  </div>
 
-  <!-- PHOTOS (NEW) -->
-  <div class="photo-section">
-    <h2>Photos</h2>
-
+    <!-- PHOTOS -->
     <div class="photo-grid">
 
-      <div class="photo-card">
-        <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
-        <div class="photo-caption">
+      <figure class="photo-card">
+        <div class="photo-img">
+          <img src="/assets/img/photo1.jpg"
+               alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
+        </div>
+        <figcaption class="photo-cap">
           Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California.
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
-      <div class="photo-card">
-        <img src="/assets/img/photo2.jpg" alt="Working in the lab">
-        <div class="photo-caption">
+      <figure class="photo-card">
+        <div class="photo-img">
+          <img src="/assets/img/photo2.jpg" alt="Working in the lab">
+        </div>
+        <figcaption class="photo-cap">
           Working in the lab!
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
-      <div class="photo-card">
-        <img src="/assets/img/photo3.jpg" alt="Kovac Lab out for dinner">
-        <div class="photo-caption">
+      <figure class="photo-card">
+        <div class="photo-img">
+          <img src="/assets/img/photo3.jpg" alt="Kovac Lab out for dinner">
+        </div>
+        <figcaption class="photo-cap">
           Kovac Lab out for dinner.
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
-      <div class="photo-card">
-        <img src="/assets/img/photo4.jpg" alt="My mom (Karen Chandross) and I (Scientist!)">
-        <div class="photo-caption">
-          My mom (Karen Chandross) and I (Scientist!).
+      <figure class="photo-card">
+        <div class="photo-img">
+          <img src="/assets/img/photo4.jpg" alt="My mom Karen Chandross and I">
         </div>
-      </div>
+        <figcaption class="photo-cap">
+          My mom (Karen Chandross) and I (Scientist!).
+        </figcaption>
+      </figure>
 
     </div>
+
   </div>
 
 </div>
