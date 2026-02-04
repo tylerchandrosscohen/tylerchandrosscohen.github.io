@@ -4,21 +4,6 @@ title: Posters
 permalink: /posters/
 ---
 
-<div style="display:flex; justify-content:center; margin: 1.5rem 0 2.5rem 0;">
-  <div style="
-    background:#aab8a6;
-    padding: 1.0rem 2.8rem;
-    font-size: 3.2rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    font-family: Georgia, 'Times New Roman', serif;
-    color:#111;
-    clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
-  ">
-    Posters
-  </div>
-</div>
-
 <style>
 .poster-grid{
   display:grid;
@@ -91,7 +76,7 @@ permalink: /posters/
       Effects of Protein Stress Factors on the Cytotoxicity of Psychrotolerant <em>Bacillus cereus</em> Isolates
     </div>
     <div class="poster-meta">IAFP Europe • 2025</div>
-    <div class="poster-tag">Toxins • Protein stress</div>
+    <div class="poster-tag">Enterotoxins • Psychrotolerant</div>
     <div class="poster-link">View poster (PDF)</div>
   </a>
 
