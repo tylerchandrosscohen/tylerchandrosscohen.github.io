@@ -11,6 +11,14 @@ title: Home
   padding: 2.2rem 1.2rem 2.8rem;
 }
 
+/* prevent odd breaks in your name */
+.hero-text h1{
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  white-space: nowrap; /* keep on one line */
+}
+
 /* --- HERO --- */
 .hero{
   display: grid;
@@ -20,34 +28,18 @@ title: Home
 }
 
 @media (max-width: 900px){
-  .hero{ grid-template-columns: 1fr; }
-}
-
-/* name + tagline */
-.hero-text h1{
-  margin: 0 0 0.6rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.6rem;
-  line-height: 1.1;
-
-  white-space: nowrap;
-  hyphens: none;
-  overflow-wrap: normal;
-  word-break: keep-all;
-}
-
-.hero-text p{
-  margin: 0.4rem 0 0 0;
-  font-size: 1.1rem;
-  line-height: 1.55;
-  color: rgba(0,0,0,0.78);
-  max-width: 60ch;
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1{
+    white-space: normal; /* allow wrap on small screens */
+  }
 }
 
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 620px;
+  max-width: 700px;   /* bigger */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -60,7 +52,7 @@ title: Home
   display: block;
 }
 
-/* social bar */
+/* top bar like your screenshot */
 .social-bar{
   background: #f4ead5;
   border-radius: 10px;
@@ -95,11 +87,13 @@ title: Home
 }
 .icon-btn svg{ width: 30px; height: 30px; }
 
+/* brand-ish colors */
 .ig{ background: #ff2ea6; }
 .tw{ background: #5fb7ff; }
 .li{ background: #0a66c2; }
 .icon-btn svg path{ fill: white; }
 
+/* Email button */
 .email-btn{
   background: #000;
   color: #fff;
@@ -108,6 +102,7 @@ title: Home
   text-decoration:none;
   font-size: 1.35rem;
   font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.2px;
   box-shadow: 0 12px 26px rgba(0,0,0,0.18);
   transition: transform 120ms ease, box-shadow 120ms ease;
   white-space: nowrap;
@@ -117,7 +112,23 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* --- BIO --- */
+/* name + tagline */
+.hero-text h1{
+  margin: 0 0 0.6rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  line-height: 1.1;
+}
+
+.hero-text p{
+  margin: 0.4rem 0 0 0;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: rgba(0,0,0,0.78);
+  max-width: 60ch;
+}
+
+/* --- BIO SECTION --- */
 .bio{
   margin-top: 2.6rem;
   background: #ffffff;
@@ -139,44 +150,62 @@ title: Home
   color: rgba(0,0,0,0.82);
 }
 
-/* --- PHOTO STRIP --- */
-.photo-strip{
-  margin-top: 2.8rem;
+/* --- PHOTO GRID SECTION (NEW) --- */
+.photo-section{
+  margin-top: 2.2rem;
+}
+
+.photo-section h2{
+  margin: 0 0 1.0rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.0rem;
 }
 
 .photo-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.4rem;
+  gap: 1.6rem;
 }
 
-@media (max-width: 1000px){
-  .photo-grid{ grid-template-columns: 1fr 1fr; }
+@media (max-width: 1100px){
+  .photo-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 600px){
-  .photo-grid{ grid-template-columns: 1fr; }
+  .photo-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 .photo-card{
-  background: #ffffff;
-  border-radius: 14px;
+  background: #fff;
+  border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.photo-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px rgba(0,0,0,0.18);
 }
 
 .photo-card img{
   width: 100%;
-  height: auto;
+  height: 320px;        /* ⬅ bigger photos */
+  object-fit: cover;    /* fills without distortion */
   display: block;
 }
 
 .photo-caption{
-  padding: 0.75rem 0.9rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: rgba(0,0,0,0.80);
-  background: #f9f6ef;
+  padding: 0.9rem 1rem;
+  background: #faf6ee;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: rgba(0,0,0,0.85);
 }
 </style>
 
@@ -184,6 +213,7 @@ title: Home
 
   <div class="hero">
 
+    <!-- LEFT: text + social bar -->
     <div class="hero-text">
       <h1>Tyler Chandross&#8209;Cohen</h1>
       <p>
@@ -194,14 +224,36 @@ title: Home
 
       <div class="social-bar">
         <div class="icon-row">
-          <a class="icon-btn ig" href="https://www.instagram.com/tyler.cc_/" target="_blank" rel="noopener"></a>
-          <a class="icon-btn tw" href="https://x.com/tyler_cc_" target="_blank" rel="noopener"></a>
-          <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener"></a>
+
+          <!-- Instagram -->
+          <a class="icon-btn ig" href="https://www.instagram.com/tyler.cc_/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.6-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
+            </svg>
+          </a>
+
+          <!-- X / Twitter -->
+          <a class="icon-btn tw" href="https://x.com/tyler_cc_" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.5l-5.1-6.6L5.7 22H2.6l7.3-8.4L1 2h6.7l4.6 6L18.9 2zm-1.1 18h1.8L6.7 3.9H4.8L17.8 20z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7 0h4v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21h4v-7c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2h-.1V9h-3.8v12z"/>
+            </svg>
+          </a>
+
         </div>
+
+        <!-- Email button -->
         <a class="email-btn" href="mailto:tfc5209@psu.edu">Email Me!</a>
       </div>
     </div>
 
+    <!-- RIGHT: your photo -->
     <div style="display:flex; justify-content:center;">
       <div class="hero-photo">
         <img src="/assets/img/tyler.jpg" alt="Photo of Tyler Chandross-Cohen">
@@ -231,12 +283,14 @@ title: Home
     </p>
   </div>
 
-  <!-- PHOTO STRIP -->
-  <div class="photo-strip">
+  <!-- PHOTOS (NEW) -->
+  <div class="photo-section">
+    <h2>Photos</h2>
+
     <div class="photo-grid">
 
       <div class="photo-card">
-        <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024">
+        <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
         <div class="photo-caption">
           Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California.
         </div>
@@ -257,7 +311,7 @@ title: Home
       </div>
 
       <div class="photo-card">
-        <img src="/assets/img/photo4.jpg" alt="Tyler Chandross-Cohen and his mom Karen Chandross">
+        <img src="/assets/img/photo4.jpg" alt="My mom (Karen Chandross) and I (Scientist!)">
         <div class="photo-caption">
           My mom (Karen Chandross) and I (Scientist!).
         </div>
