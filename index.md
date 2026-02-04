@@ -212,22 +212,19 @@ title: Home
     <h2>Biography</h2>
 
     <p>
-     As a food scientist, I am constantly reminded of the integral role that microscopic organisms play in our food system. Understanding how these organisms can survive and grow in our food system is crucial to protect the safety and well-being of our population and the nutritive value of food. 
-   </p>
-During my undergraduate studies, I became fascinated with the field of food microbiology and food safety. I began working with Listeria monocytogenes, to understand how it can persist in biofilms with other microorganisms, and if anti-listerial cultures could reduce the
-L. monocytogenes load.
-  </p>
-During my graduate studies, I shifted my focus to investigate the foodborne pathogen Bacillus cereus. I have worked on projects evaluating growth in HTST milk, to develop an exposure assessment model for industry use, and my thesis research involves using gene knockouts to better understand enterotoxin-mediated virulence potential and the role of an enterotoxin, Hemolysin BL, in surface colonization and biofilm formation.
-  </p>
-My career goal is to advance the control of foodborne pathogens and contribute to the development of safe, sustainable, and wholesome food for all.
-  </p>
+  As a food scientist, I am continually reminded of the integral role that microscopic organisms play in our food system. Understanding how these organisms survive, grow, and interact within food environments is essential for protecting public health and preserving the nutritional quality of foods.
+</p>
 
-    <div class="quick">
-      <div class="chip"><strong>Research themes:</strong> B. cereus virulence • psychrotolerance • surface colonization • toxin stability</div>
-      <div class="chip"><strong>Methods:</strong> WGS (Illumina/Nanopore) • phylogenomics • RT-qPCR • cytotoxicity assays • modeling</div>
-      <div class="chip"><strong>Interests:</strong> precision food safety • outbreak prevention • microbial ecology</div>
-      <div class="chip"><strong>Links:</strong> CV • Publications • Posters • Contact</div>
-    </div>
-  </div>
+<p>
+  During my undergraduate studies, I became fascinated with food microbiology and food safety. I began working with <em>Listeria monocytogenes</em> to understand how it persists within biofilms formed alongside other microorganisms, and to evaluate whether antilisterial cultures could reduce <em>L. monocytogenes</em> loads in food-associated environments.
+</p>
+
+<p>
+  During my graduate studies, I shifted my focus to the foodborne pathogen <em>Bacillus cereus</em>. I have contributed to projects evaluating growth dynamics in high-temperature short-time (HTST) milk to inform exposure assessment models for industry use. My thesis research centers on using targeted gene knockouts to better understand enterotoxin-mediated virulence potential, with particular emphasis on the role of the enterotoxin hemolysin BL in surface colonization and biofilm formation.
+</p>
+
+<p>
+  My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
+</p>
 
 </div>
