@@ -82,7 +82,7 @@ permalink: /research/
 
     <div class="research-text">
       <h2>
-        Integrating Whole Genome Sequencing and Cytotoxicity to Define
+        Integrating Whole Genome Sequencing and Cytotoxicity to Better Understand
         <em>Bacillus cereus</em> Virulence Potential
       </h2>
 
@@ -97,15 +97,9 @@ permalink: /research/
       <p>
         I address this challenge by combining whole genome sequencing (WGS) with
         phenotypic cytotoxicity assays to link genetic content to functional
-        outcomes. Using comparative genomics, I examine the distribution and
-        diversity of enterotoxin genes, regulatory elements, and accessory
-        virulence factors across diverse <em>B. cereus</em> isolates from food,
-        clinical, and environmental sources.
+        outcomes. The goal is to integrate these genomic data with in vitro cytotoxicity measurements and targeted validation of single-nucleotide polymorphisms in enterotoxin genes associated with cytotoxicity within an exposure assessment framework, to determine whether virulence potential and risk can be predicted. This integrated approach enables a more nuanced, strain-specific evaluation of virulence potential by directly linking genomic variation in toxin loci to functional cytotoxic outcomes, thereby strengthening exposure assessment and informing food safety decision-making.
       </p>
-
-      <p>
-        The goal is to integrate these genomic data with in vitro cytotoxicity measurements and targeted validation of single-nucleotide polymorphisms in enterotoxin genes associated with cytotoxicity within an exposure assessment framework, to determine whether virulence potential and risk can be predicted. This integrated approach enables a more nuanced, strain-specific evaluation of virulence potential by directly linking genomic variation in toxin loci to functional cytotoxic outcomes, thereby strengthening exposure assessment and informing food safety decision-making.
-      </p>
+      
     </div>
 
     <div class="research-img">
