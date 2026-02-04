@@ -6,7 +6,7 @@ permalink: /research/
 
 <style>
 .research-wrap{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.4rem 1.2rem 3rem;
 }
