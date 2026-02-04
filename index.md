@@ -26,12 +26,13 @@ title: Home
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 520px;
-  border-radius: 14px;
+  max-width: 620px;   /* ⬅ bigger */
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.22);
   border: 1px solid rgba(0,0,0,0.08);
 }
+
 .hero-photo img{
   width: 100%;
   height: auto;
