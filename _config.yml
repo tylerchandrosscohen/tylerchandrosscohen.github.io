@@ -1,3 +1,9 @@
 title: Tyler Chandross-Cohen
 description: Food Microbiology | Bacillus cereus | Genomics & Cytotoxicity
 theme: minima
+
+header_pages:
+  - index.md
+  - publications.md
+  - posters.md
+  - cv.md
