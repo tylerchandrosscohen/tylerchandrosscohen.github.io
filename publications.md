@@ -4,22 +4,6 @@ title: Publications
 permalink: /publications/
 ---
 
-<!-- Banner (similar vibe to your screenshot) -->
-<div style="display:flex; justify-content:center; margin: 1.5rem 0 2.5rem 0;">
-  <div style="
-    background:#aab8a6;
-    padding: 1.0rem 2.8rem;
-    font-size: 3.2rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    font-family: Georgia, 'Times New Roman', serif;
-    color:#111;
-    clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
-  ">
-    Publications
-  </div>
-</div>
-
 <!-- Responsive grid -->
 <div style="
   display:grid;
