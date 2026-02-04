@@ -37,8 +37,8 @@ nav,
 
 /* --- page-wide tweaks --- */
 .home-wrap{
-  max-width: 1400px;                 /* wider use of screen */
-  width: min(1400px, 96vw);          /* scale with screen */
+  max-width: 1100px;                 /* wider use of screen */
+  width: min(1100px, 96vw);          /* scale with screen */
   margin: 0 auto;
   padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;  /* responsive side padding */
 }
