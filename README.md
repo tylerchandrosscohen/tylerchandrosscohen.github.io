@@ -1,2 +1,2 @@
 # tylerchandrosscohen.github.io
-My Website
+My Personal Website
