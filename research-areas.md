@@ -97,7 +97,7 @@ permalink: /research/
       <p>
         I address this challenge by combining whole genome sequencing (WGS) with
         phenotypic cytotoxicity assays to link genetic content to functional
-        outcomes. The goal is to integrate these genomic data with in vitro cytotoxicity measurements and targeted validation of single-nucleotide polymorphisms in enterotoxin genes associated with cytotoxicity within an exposure assessment framework, to determine whether virulence potential and risk can be predicted. This integrated approach enables a more nuanced, strain-specific evaluation of virulence potential by directly linking genomic variation in toxin loci to functional cytotoxic outcomes, thereby strengthening exposure assessment and informing food safety decision-making.
+        outcomes. The goal is to integrate these genomic data with in vitro cytotoxicity measurements and targeted validation of single-nucleotide polymorphisms in enterotoxin genes associated with cytotoxicity within an exposure assessment framework, to determine whether virulence potential and risk can be predicted. This integrated approach enables a more nuanced, strain-specific evaluation of virulence potential by directly linking genomic variation to functional cytotoxic outcomes, thereby strengthening exposure assessment and informing food safety decision-making.
       </p>
       
     </div>
@@ -140,8 +140,7 @@ permalink: /research/
       </p>
 
       <p>
-        This research has particular relevance for refrigerated dairy products,
-        infant foods, and temperature-abused foods, where psychrotolerant
+        This research has particular relevance for refrigerated dairy products, where psychrotolerant
         <em>B. cereus</em> strains may evade traditional detection or risk
         categorization frameworks.
       </p>
