@@ -9,11 +9,6 @@ title: Home
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.2rem 1.2rem 2.8rem;
-
-.hero-text h1{
-  hyphens: none;
-  overflow-wrap: normal;
-  word-break: keep-all;
 }
 
 /* --- HERO --- */
@@ -28,10 +23,32 @@ title: Home
   .hero{ grid-template-columns: 1fr; }
 }
 
+/* name + tagline */
+.hero-text h1{
+  margin: 0 0 0.6rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  line-height: 1.1;
+
+  /* keep name on one line */
+  white-space: nowrap;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.hero-text p{
+  margin: 0.4rem 0 0 0;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: rgba(0,0,0,0.78);
+  max-width: 60ch;
+}
+
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 620px;   /* ⬅ bigger */
+  max-width: 620px;   /* bigger */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -46,7 +63,7 @@ title: Home
 
 /* top bar like your screenshot */
 .social-bar{
-  background: #f4ead5;           /* warm tan like your screenshot */
+  background: #f4ead5;           /* warm tan */
   border-radius: 10px;
   padding: 1.1rem 1.2rem;
   display: flex;
@@ -104,21 +121,6 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* name + tagline */
-.hero-text h1{
-  margin: 0 0 0.6rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.6rem;
-  line-height: 1.1;
-}
-.hero-text p{
-  margin: 0.4rem 0 0 0;
-  font-size: 1.1rem;
-  line-height: 1.55;
-  color: rgba(0,0,0,0.78);
-  max-width: 60ch;
-}
-
 /* --- BIO SECTION --- */
 .bio{
   margin-top: 2.6rem;
@@ -166,7 +168,7 @@ title: Home
     <div class="hero-text">
       <h1>Tyler Chandross&#8209;Cohen</h1>
       <p>
-        Food microbiology researcher with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus</em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods. 
+        Food microbiology researcher with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus</em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods.
       </p>
 
       <div style="height:1.2rem"></div>
@@ -216,19 +218,21 @@ title: Home
     <h2>Biography</h2>
 
     <p>
-  As a food scientist, I am continually reminded of the integral role that microscopic organisms play in our food system. Understanding how these organisms survive, grow, and interact within food environments is essential for protecting public health and preserving the nutritional quality of foods.
-</p>
+      As a food scientist, I am continually reminded of the integral role that microscopic organisms play in our food system. Understanding how these organisms survive, grow, and interact within food environments is essential for protecting public health and preserving the nutritional quality of foods.
+    </p>
 
-<p>
-  During my undergraduate studies, I became fascinated with food microbiology and food safety. I began working with <em>Listeria monocytogenes</em> to understand how it persists within biofilms formed alongside other microorganisms, and to evaluate whether antilisterial cultures could reduce <em>L. monocytogenes</em> loads in food-associated environments.
-</p>
+    <p>
+      During my undergraduate studies, I became fascinated with food microbiology and food safety. I began working with <em>Listeria monocytogenes</em> to understand how it persists within biofilms formed alongside other microorganisms, and to evaluate whether antilisterial cultures could reduce <em>L. monocytogenes</em> loads in food-associated environments.
+    </p>
 
-<p>
-  During my graduate studies, I shifted my focus to the foodborne pathogen <em>Bacillus cereus</em>. I have contributed to projects evaluating growth dynamics in high-temperature short-time (HTST) milk to inform exposure assessment models for industry use. My thesis research, funded by a USDA NIFA predoctoral fellowship, centers on using targeted gene knockouts to better understand enterotoxin-mediated virulence potential, with particular emphasis on the role of the enterotoxin hemolysin BL in surface colonization and biofilm formation.
-</p>
+    <p>
+      During my graduate studies, I shifted my focus to the foodborne pathogen <em>Bacillus cereus</em>. I have contributed to projects evaluating growth dynamics in high-temperature short-time (HTST) milk to inform exposure assessment models for industry use. My thesis research, funded by a USDA NIFA predoctoral fellowship, centers on using targeted gene knockouts to better understand enterotoxin-mediated virulence potential, with particular emphasis on the role of the enterotoxin hemolysin BL in surface colonization and biofilm formation.
+    </p>
 
-<p>
-  My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
-</p>
+    <p>
+      My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
+    </p>
+
+  </div>
 
 </div>
