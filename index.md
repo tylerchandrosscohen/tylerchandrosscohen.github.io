@@ -161,8 +161,7 @@ title: Home
     <div class="hero-text">
       <h1>Tyler Chandross-Cohen</h1>
       <p>
-        Food microbiologist focused on <em>Bacillus cereus</em> ecology and virulence, integrating whole-genome sequencing,
-        quantitative models, and experimental microbiology to improve food safety risk assessment.
+        Food microbiology researcher with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus<em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods. 
       </p>
 
       <div style="height:1.2rem"></div>
