@@ -14,7 +14,7 @@ title: Home
 /* --- HERO --- */
 .hero{
   display: grid;
-  grid-template-columns: 1fr 1fr; /* was 1.1fr 0.9fr */
+  grid-template-columns: 1fr 1fr;
   gap: 2.6rem;
   align-items: center;
 }
@@ -30,7 +30,6 @@ title: Home
   font-size: 2.6rem;
   line-height: 1.1;
 
-  /* keep name on one line */
   white-space: nowrap;
   hyphens: none;
   overflow-wrap: normal;
@@ -48,7 +47,7 @@ title: Home
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 620px;   /* bigger */
+  max-width: 620px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -61,9 +60,9 @@ title: Home
   display: block;
 }
 
-/* top bar like your screenshot */
+/* social bar */
 .social-bar{
-  background: #f4ead5;           /* warm tan */
+  background: #f4ead5;
   border-radius: 10px;
   padding: 1.1rem 1.2rem;
   display: flex;
@@ -96,13 +95,11 @@ title: Home
 }
 .icon-btn svg{ width: 30px; height: 30px; }
 
-/* brand-ish colors */
-.ig{ background: #ff2ea6; }      /* instagram pink */
-.tw{ background: #5fb7ff; }      /* twitter/x light blue */
-.li{ background: #0a66c2; }      /* linkedin */
+.ig{ background: #ff2ea6; }
+.tw{ background: #5fb7ff; }
+.li{ background: #0a66c2; }
 .icon-btn svg path{ fill: white; }
 
-/* Email button */
 .email-btn{
   background: #000;
   color: #fff;
@@ -111,7 +108,6 @@ title: Home
   text-decoration:none;
   font-size: 1.35rem;
   font-family: Georgia, "Times New Roman", serif;
-  letter-spacing: 0.2px;
   box-shadow: 0 12px 26px rgba(0,0,0,0.18);
   transition: transform 120ms ease, box-shadow 120ms ease;
   white-space: nowrap;
@@ -121,7 +117,7 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* --- BIO SECTION --- */
+/* --- BIO --- */
 .bio{
   margin-top: 2.6rem;
   background: #ffffff;
@@ -142,21 +138,45 @@ title: Home
   line-height: 1.65;
   color: rgba(0,0,0,0.82);
 }
-.bio .quick{
-  margin-top: 1.0rem;
+
+/* --- PHOTO STRIP --- */
+.photo-strip{
+  margin-top: 2.8rem;
+}
+
+.photo-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.8rem 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
 }
-@media (max-width: 700px){
-  .bio .quick{ grid-template-columns: 1fr; }
+
+@media (max-width: 1000px){
+  .photo-grid{ grid-template-columns: 1fr 1fr; }
 }
-.bio .chip{
-  background: #f4ead5;
+@media (max-width: 600px){
+  .photo-grid{ grid-template-columns: 1fr; }
+}
+
+.photo-card{
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
   border: 1px solid rgba(0,0,0,0.06);
-  padding: 0.65rem 0.8rem;
-  border-radius: 10px;
-  font-size: 0.98rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+}
+
+.photo-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-caption{
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(0,0,0,0.80);
+  background: #f9f6ef;
 }
 </style>
 
@@ -164,7 +184,6 @@ title: Home
 
   <div class="hero">
 
-    <!-- LEFT: text + social bar -->
     <div class="hero-text">
       <h1>Tyler Chandross&#8209;Cohen</h1>
       <p>
@@ -175,36 +194,14 @@ title: Home
 
       <div class="social-bar">
         <div class="icon-row">
-
-          <!-- Instagram -->
-          <a class="icon-btn ig" href="https://www.instagram.com/tyler.cc_/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.6-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
-            </svg>
-          </a>
-
-          <!-- X / Twitter -->
-          <a class="icon-btn tw" href="https://x.com/tyler_cc_" target="_blank" rel="noopener" aria-label="X / Twitter">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.5l-5.1-6.6L5.7 22H2.6l7.3-8.4L1 2h6.7l4.6 6L18.9 2zm-1.1 18h1.8L6.7 3.9H4.8L17.8 20z"/>
-            </svg>
-          </a>
-
-          <!-- LinkedIn -->
-          <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7 0h4v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21h4v-7c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2h-.1V9h-3.8v12z"/>
-            </svg>
-          </a>
-
+          <a class="icon-btn ig" href="https://www.instagram.com/tyler.cc_/" target="_blank" rel="noopener"></a>
+          <a class="icon-btn tw" href="https://x.com/tyler_cc_" target="_blank" rel="noopener"></a>
+          <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener"></a>
         </div>
-
-        <!-- Email button -->
         <a class="email-btn" href="mailto:tfc5209@psu.edu">Email Me!</a>
       </div>
     </div>
 
-    <!-- RIGHT: your photo -->
     <div style="display:flex; justify-content:center;">
       <div class="hero-photo">
         <img src="/assets/img/tyler.jpg" alt="Photo of Tyler Chandross-Cohen">
@@ -232,7 +229,41 @@ title: Home
     <p>
       My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
     </p>
+  </div>
 
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <div class="photo-grid">
+
+      <div class="photo-card">
+        <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024">
+        <div class="photo-caption">
+          Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="/assets/img/photo2.jpg" alt="Working in the lab">
+        <div class="photo-caption">
+          Working in the lab!
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="/assets/img/photo3.jpg" alt="Kovac Lab out for dinner">
+        <div class="photo-caption">
+          Kovac Lab out for dinner.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="/assets/img/photo4.jpg" alt="Tyler Chandross-Cohen and his mom Karen Chandross">
+        <div class="photo-caption">
+          My mom (Karen Chandross) and I (Scientist!).
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </div>
