@@ -16,10 +16,29 @@ title: Home
   padding-right: 0 !important;
 }
 
+/* ===== FIX HEADER/NAV: bring it in from the edges ===== */
+.site-header,
+header,
+nav,
+.navbar {
+  padding-left: clamp(16px, 3vw, 48px);
+  padding-right: clamp(16px, 3vw, 48px);
+}
+
+/* If your theme wraps header/nav links in these, this forces it */
+.site-header .wrapper,
+.site-header .container,
+.site-nav,
+.site-nav .wrapper,
+.site-nav .container {
+  padding-left: clamp(16px, 3vw, 48px) !important;
+  padding-right: clamp(16px, 3vw, 48px) !important;
+}
+
 /* --- page-wide tweaks --- */
 .home-wrap{
-  max-width: 1100px;                 /* was 1100 */
-  width: min(1100px, 96vw);          /* scale with screen */
+  max-width: 1400px;                 /* wider use of screen */
+  width: min(1400px, 96vw);          /* scale with screen */
   margin: 0 auto;
   padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;  /* responsive side padding */
 }
