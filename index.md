@@ -84,7 +84,7 @@ nav,
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 720px;
+  max-width: 500px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
