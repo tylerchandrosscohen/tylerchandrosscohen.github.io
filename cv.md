@@ -66,7 +66,7 @@ permalink: /cv/
   background: #fff;
 }
 
-/* fallback box (for browsers that block embedding) */
+/* fallback box */
 .fallback{
   margin-top: 1rem;
   padding: 1rem 1.1rem;
@@ -82,26 +82,36 @@ permalink: /cv/
     <h1>Curriculum Vitae</h1>
 
     <div class="cv-links">
-      <a class="cv-btn" href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf" target="_blank" rel="noopener">Open PDF</a>
-      <a class="cv-btn" href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf" download>Download PDF</a>
-      <a class="cv-btn" href="/assets/cv/Tyler_Chandross-Cohen_CV.docx" download>Download Word</a>
+      <a class="cv-btn"
+         href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf"
+         target="_blank"
+         rel="noopener">
+        Open PDF
+      </a>
+
+      <a class="cv-btn"
+         href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf"
+         download>
+        Download PDF
+      </a>
     </div>
   </div>
 
   <p class="cv-note">
-    View the CV below or download the PDF/Word version using the buttons above.
+    View the CV below or download the PDF using the buttons above.
   </p>
 
   <!-- Embedded PDF viewer -->
   <iframe
     class="pdf-frame"
     src="/assets/cv/Tyler_Chandross-Cohen_CV.pdf#view=FitH"
-    title="Tyler Chandross-Cohen CV (PDF)"
-  ></iframe>
+    title="Tyler Chandross-Cohen CV (PDF)">
+  </iframe>
 
   <div class="fallback">
     <strong>Having trouble viewing the PDF?</strong>
-    Some browsers or privacy settings block embedded PDFs. Use:
+    Some browsers or privacy settings block embedded PDFs.
+    Use
     <a href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf" target="_blank" rel="noopener">Open PDF</a>
     or
     <a href="/assets/cv/Tyler_Chandross-Cohen_CV.pdf" download>Download PDF</a>.
