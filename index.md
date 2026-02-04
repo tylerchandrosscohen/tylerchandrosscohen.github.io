@@ -4,11 +4,24 @@ title: Home
 ---
 
 <style>
+/* ===== MINIMAL CHANGE: break out of theme width limiter ===== */
+.container, .wrapper, .page-content, main {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Optional: if your theme adds big side padding, remove it */
+.container, .wrapper, .page-content, main {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* --- page-wide tweaks --- */
 .home-wrap{
-  max-width: 1100px;
+  max-width: 1400px;                 /* was 1100 */
+  width: min(1400px, 96vw);          /* scale with screen */
   margin: 0 auto;
-  padding: 2.2rem 1.2rem 2.8rem;
+  padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;  /* responsive side padding */
 }
 
 /* --- HERO --- */
