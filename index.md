@@ -14,8 +14,8 @@ title: Home
 /* --- HERO --- */
 .hero{
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2.2rem;
+  grid-template-columns: 1fr 1fr; /* was 1.1fr 0.9fr */
+  gap: 2.6rem;
   align-items: center;
 }
 
