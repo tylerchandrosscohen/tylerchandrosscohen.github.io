@@ -95,7 +95,7 @@ permalink: /posters/
     <div class="poster-title">
       Variation in <em>Bacillus cereus</em> Hemolysin BL Transcription Associated with a SNP in the Transcriptional Regulatory Region
     </div>
-    <div class="poster-meta">Graduate Student Day • 2024</div>
+    <div class="poster-meta">GSD • 2024</div>
     <div class="poster-tag">Regulation • SNP</div>
     <div class="poster-link">View poster (PDF)</div>
   </a>
@@ -125,7 +125,7 @@ permalink: /posters/
     <div class="poster-title">
       Surface Colonization Area Was Associated with Phylogenetic Group and Hemolysin BL Production in <em>Bacillus cereus</em> sensu lato
     </div>
-    <div class="poster-meta">Graduate Student Day • 2023</div>
+    <div class="poster-meta">GSD • 2023</div>
     <div class="poster-tag">Surface colonization</div>
     <div class="poster-link">View poster (PDF)</div>
   </a>
@@ -145,7 +145,7 @@ permalink: /posters/
     <div class="poster-title">
       Isolation, Characterization, and Application of Antilisterial Isolates in a Raw Milk Cheese Model
     </div>
-    <div class="poster-meta">Graduate Student Day • 2022</div>
+    <div class="poster-meta">GSD • 2022</div>
     <div class="poster-tag">Cheese model</div>
     <div class="poster-link">View poster (PDF)</div>
   </a>
