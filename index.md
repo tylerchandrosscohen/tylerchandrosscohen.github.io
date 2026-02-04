@@ -211,16 +211,15 @@ title: Home
     <h2>Biography</h2>
 
     <p>
-      I’m a food microbiologist interested in how bacterial genetic diversity and environmental conditions shape
-      virulence potential in food-associated systems. My work focuses on the <em>Bacillus cereus</em> group,
-      combining whole-genome sequencing, targeted molecular assays, and phenotypic experiments to link genotype,
-      growth conditions, and toxin-related outcomes.
-    </p>
-
-    <p>
-      Broadly, I’m motivated by precision food safety—using modern sequencing and quantitative approaches to improve
-      hazard detection, exposure assessment, and actionable risk decisions in real-world food matrices.
-    </p>
+     As a food scientist, I am constantly reminded of the integral role that microscopic organisms play in our food system. Understanding how these organisms can survive and grow in our food system is crucial to protect the safety and well-being of our population and the nutritive value of food. 
+   </p>
+During my undergraduate studies, I became fascinated with the field of food microbiology and food safety. I began working with Listeria monocytogenes, to understand how it can persist in biofilms with other microorganisms, and if anti-listerial cultures could reduce the
+L. monocytogenes load.
+  </p>
+During my graduate studies, I shifted my focus to investigate the foodborne pathogen Bacillus cereus. I have worked on projects evaluating growth in HTST milk, to develop an exposure assessment model for industry use, and my thesis research involves using gene knockouts to better understand enterotoxin-mediated virulence potential and the role of an enterotoxin, Hemolysin BL, in surface colonization and biofilm formation.
+  </p>
+My career goal is to advance the control of foodborne pathogens and contribute to the development of safe, sustainable, and wholesome food for all.
+  </p>
 
     <div class="quick">
       <div class="chip"><strong>Research themes:</strong> B. cereus virulence • psychrotolerance • surface colonization • toxin stability</div>
