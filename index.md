@@ -9,6 +9,11 @@ title: Home
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.2rem 1.2rem 2.8rem;
+
+.hero-text h1{
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 /* --- HERO --- */
