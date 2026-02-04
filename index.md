@@ -219,7 +219,7 @@ title: Home
 </p>
 
 <p>
-  During my graduate studies, I shifted my focus to the foodborne pathogen <em>Bacillus cereus</em>. I have contributed to projects evaluating growth dynamics in high-temperature short-time (HTST) milk to inform exposure assessment models for industry use. My thesis research centers on using targeted gene knockouts to better understand enterotoxin-mediated virulence potential, with particular emphasis on the role of the enterotoxin hemolysin BL in surface colonization and biofilm formation.
+  During my graduate studies, I shifted my focus to the foodborne pathogen <em>Bacillus cereus</em>. I have contributed to projects evaluating growth dynamics in high-temperature short-time (HTST) milk to inform exposure assessment models for industry use. My thesis research, funded by a USDA NIFA predoctoral fellowship, centers on using targeted gene knockouts to better understand enterotoxin-mediated virulence potential, with particular emphasis on the role of the enterotoxin hemolysin BL in surface colonization and biofilm formation.
 </p>
 
 <p>
