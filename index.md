@@ -37,6 +37,10 @@ title: Home
   word-break: keep-all;
 }
 
+@media (max-width: 520px){
+  .hero-text h1{ white-space: normal; }
+}
+
 .hero-text p{
   margin: 0.4rem 0 0 0;
   font-size: 1.1rem;
@@ -48,7 +52,7 @@ title: Home
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 720px;   /* bigger */
+  max-width: 720px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -103,13 +107,11 @@ title: Home
 }
 .icon-btn svg{ width: 30px; height: 30px; }
 
-/* brand-ish colors */
 .ig{ background: #ff2ea6; }
 .tw{ background: #5fb7ff; }
 .li{ background: #0a66c2; }
 .icon-btn svg path{ fill: white; }
 
-/* Email button */
 .email-btn{
   background: #000;
   color: #fff;
@@ -128,13 +130,13 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* --- BIO SECTION (wider) --- */
+/* --- BIO (wider) --- */
 .bio{
   margin: 3.2rem auto 0;
-  max-width: 1250px;          /* ⬅ wider than hero */
+  max-width: 1250px;          /* wider */
   background: #ffffff;
   border-radius: 14px;
-  padding: 2.2rem 2.4rem;     /* ⬅ more breathing room */
+  padding: 2.2rem 2.4rem;     /* more breathing room */
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
@@ -150,14 +152,14 @@ title: Home
   font-size: 1.08rem;
   line-height: 1.7;
   color: rgba(0,0,0,0.82);
-  max-width: 85ch;            /* ⬅ keeps lines readable */
+  max-width: 85ch;            /* readable line length */
 }
 
 /* --- PHOTO GRID: locked 2x2 --- */
 .photo-grid{
   margin-top: 2.2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* FORCE 2x2 */
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
 }
 
@@ -173,17 +175,18 @@ title: Home
   box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
 
-/* Fixed image height so all cards align and whitespace disappears */
+/* Fixed image height: consistent, no whitespace */
 .photo-img{
   width: 100%;
   height: 420px;
   overflow: hidden;
+  cursor: zoom-in; /* indicates click-to-zoom */
 }
 
 .photo-img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* crop instead of shrink */
+  object-fit: cover;
   display: block;
 }
 
@@ -193,6 +196,29 @@ title: Home
   font-size: 1.05rem;
   line-height: 1.35;
   color: rgba(0,0,0,0.85);
+}
+
+/* --- LIGHTBOX --- */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.lightbox.active{
+  display: flex;
+}
+
+.lightbox img{
+  max-width: 95%;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6);
 }
 </style>
 
@@ -273,7 +299,7 @@ title: Home
     <div class="photo-grid">
 
       <figure class="photo-card">
-        <div class="photo-img">
+        <div class="photo-img" data-full="/assets/img/photo1.jpg">
           <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
         </div>
         <figcaption class="photo-cap">
@@ -282,7 +308,7 @@ title: Home
       </figure>
 
       <figure class="photo-card">
-        <div class="photo-img">
+        <div class="photo-img" data-full="/assets/img/photo2.jpg">
           <img src="/assets/img/photo2.jpg" alt="Working in the lab">
         </div>
         <figcaption class="photo-cap">
@@ -291,7 +317,7 @@ title: Home
       </figure>
 
       <figure class="photo-card">
-        <div class="photo-img">
+        <div class="photo-img" data-full="/assets/img/photo3.jpg">
           <img src="/assets/img/photo3.jpg" alt="Kovac Lab out for dinner">
         </div>
         <figcaption class="photo-cap">
@@ -300,7 +326,7 @@ title: Home
       </figure>
 
       <figure class="photo-card">
-        <div class="photo-img">
+        <div class="photo-img" data-full="/assets/img/photo4.jpg">
           <img src="/assets/img/photo4.jpg" alt="My mom (Karen Chandross) and I (Scientist!)">
         </div>
         <figcaption class="photo-cap">
@@ -313,3 +339,34 @@ title: Home
   </div>
 
 </div>
+
+<!-- LIGHTBOX (click photos to enlarge) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <img src="" alt="Expanded photo">
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+
+  document.querySelectorAll('.photo-img').forEach(item => {
+    item.addEventListener('click', () => {
+      const fullSrc = item.getAttribute('data-full');
+      lightboxImg.src = fullSrc;
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+    lightbox.setAttribute('aria-hidden', 'true');
+  }
+
+  lightbox.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
