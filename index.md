@@ -11,31 +11,44 @@ title: Home
   padding: 2.2rem 1.2rem 2.8rem;
 }
 
-/* Keep your name on one line */
-.hero-text h1{
-  hyphens: none;
-  overflow-wrap: normal;
-  word-break: keep-all;
-  white-space: nowrap;
-}
-
 /* --- HERO --- */
 .hero{
   display: grid;
-  grid-template-columns: 1fr 1fr; /* balanced columns */
+  grid-template-columns: 1fr 1fr;
   gap: 2.6rem;
   align-items: center;
 }
 
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }
-  .hero-text h1{ white-space: normal; } /* allow wrap on small screens */
+}
+
+/* name + tagline */
+.hero-text h1{
+  margin: 0 0 0.6rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 3.2vw, 3.0rem);
+  line-height: 1.05;
+
+  /* prevent breaking */
+  white-space: nowrap;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.hero-text p{
+  margin: 0.4rem 0 0 0;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: rgba(0,0,0,0.78);
+  max-width: 60ch;
 }
 
 /* photo */
 .hero-photo{
   width: 100%;
-  max-width: 680px;   /* bigger */
+  max-width: 720px;   /* bigger */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 16px 40px rgba(0,0,0,0.22);
@@ -48,7 +61,7 @@ title: Home
   display: block;
 }
 
-/* social bar like your screenshot */
+/* top bar like your screenshot */
 .social-bar{
   background: #f4ead5;
   border-radius: 10px;
@@ -58,6 +71,13 @@ title: Home
   justify-content: space-between;
   gap: 1.2rem;
   border: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 520px){
+  .social-bar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .icon-row{
@@ -108,21 +128,6 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* name + tagline */
-.hero-text h1{
-  margin: 0 0 0.6rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.85rem;  /* a touch bigger */
-  line-height: 1.08;
-}
-.hero-text p{
-  margin: 0.4rem 0 0 0;
-  font-size: 1.1rem;
-  line-height: 1.55;
-  color: rgba(0,0,0,0.78);
-  max-width: 60ch;
-}
-
 /* --- BIO SECTION --- */
 .bio{
   margin-top: 2.6rem;
@@ -145,59 +150,46 @@ title: Home
   color: rgba(0,0,0,0.82);
 }
 
-/* --- PHOTO GRID (updated to make photos bigger + remove whitespace) --- */
+/* --- PHOTO GRID: locked 2x2 --- */
 .photo-grid{
   margin-top: 2.2rem;
   display: grid;
-  gap: 1.4rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* FORCE 2x2 */
+  gap: 1.6rem;
 }
 
-@media (max-width: 1050px){
-  .photo-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 650px){
+@media (max-width: 900px){
   .photo-grid{ grid-template-columns: 1fr; }
 }
 
 .photo-card{
-  background: #fff;
+  background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
 
-/* Fixed image window so all cards look clean on wide screens */
+/* Fixed image height so all cards align and whitespace disappears */
 .photo-img{
   width: 100%;
-  aspect-ratio: 4 / 5;      /* portrait-friendly */
+  height: 420px;
   overflow: hidden;
-  background: #eee;
 }
 
 .photo-img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* removes empty space by cropping */
-  object-position: center;
+  object-fit: cover;   /* crop instead of shrink */
   display: block;
 }
 
-/* Caption: consistent height, clamped lines */
 .photo-cap{
   background: #f7f0e1;
-  padding: 0.95rem 1.05rem 1.05rem;
+  padding: 1rem 1.1rem;
   font-size: 1.05rem;
   line-height: 1.35;
-  color: rgba(0,0,0,0.82);
-
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  color: rgba(0,0,0,0.85);
 }
 </style>
 
@@ -208,6 +200,7 @@ title: Home
     <!-- LEFT: text + social bar -->
     <div class="hero-text">
       <h1>Tyler Chandross&#8209;Cohen</h1>
+
       <p>
         Food microbiology researcher with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus</em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods.
       </p>
@@ -240,7 +233,6 @@ title: Home
 
         </div>
 
-        <!-- Email button -->
         <a class="email-btn" href="mailto:tfc5209@psu.edu">Email Me!</a>
       </div>
     </div>
@@ -274,13 +266,12 @@ title: Home
       My long-term career goal is to advance strategies for controlling foodborne pathogens and to contribute to the development of a safe, sustainable, and wholesome food supply.
     </p>
 
-    <!-- PHOTOS -->
+    <!-- PHOTO GRID -->
     <div class="photo-grid">
 
       <figure class="photo-card">
         <div class="photo-img">
-          <img src="/assets/img/photo1.jpg"
-               alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
+          <img src="/assets/img/photo1.jpg" alt="Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California">
         </div>
         <figcaption class="photo-cap">
           Receiving the IAFP Student Travel Scholarship in 2024 in Long Beach, California.
@@ -307,7 +298,7 @@ title: Home
 
       <figure class="photo-card">
         <div class="photo-img">
-          <img src="/assets/img/photo4.jpg" alt="My mom Karen Chandross and I">
+          <img src="/assets/img/photo4.jpg" alt="My mom (Karen Chandross) and I (Scientist!)">
         </div>
         <figcaption class="photo-cap">
           My mom (Karen Chandross) and I (Scientist!).
