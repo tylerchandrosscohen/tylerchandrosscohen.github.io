@@ -330,7 +330,7 @@ title: Home
           <img src="/assets/img/photo4.jpg" alt="My mom (Karen Chandross) and I (Scientist!)">
         </div>
         <figcaption class="photo-cap">
-          My mom (Karen Chandross) and I (Scientist!).
+          My mom (Dr. Karen Chandross) and I.
         </figcaption>
       </figure>
 
