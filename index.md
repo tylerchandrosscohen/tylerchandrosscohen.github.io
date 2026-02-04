@@ -263,7 +263,7 @@ nav,
       <h1>Tyler Chandross&#8209;Cohen</h1>
 
       <p>
-        Food microbiology researcher with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus</em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods.
+        Food microbiology Ph.D. candidate with a strong record of conducting interdisciplinary research at the interface of microbial genomics, molecular biology, and food safety. My work centers on the foodborne pathogen <em>Bacillus cereus</em>, with a particular focus on how genetic diversity and environmental conditions govern virulence expression and cytotoxic potential across diverse isolates, including psychrotolerant strains relevant to refrigerated foods.
       </p>
 
       <div style="height:1.2rem"></div>
