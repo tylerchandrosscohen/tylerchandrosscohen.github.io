@@ -171,21 +171,21 @@ title: Home
         <div class="icon-row">
 
           <!-- Instagram -->
-          <a class="icon-btn ig" href="REPLACE_INSTAGRAM_LINK" target="_blank" rel="noopener" aria-label="Instagram">
+          <a class="icon-btn ig" href="https://www.instagram.com/tyler.cc_/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.6-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
             </svg>
           </a>
 
           <!-- X / Twitter -->
-          <a class="icon-btn tw" href="REPLACE_TWITTER_LINK" target="_blank" rel="noopener" aria-label="X / Twitter">
+          <a class="icon-btn tw" href="https://x.com/tyler_cc_" target="_blank" rel="noopener" aria-label="X / Twitter">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.5l-5.1-6.6L5.7 22H2.6l7.3-8.4L1 2h6.7l4.6 6L18.9 2zm-1.1 18h1.8L6.7 3.9H4.8L17.8 20z"/>
             </svg>
           </a>
 
           <!-- LinkedIn -->
-          <a class="icon-btn li" href="REPLACE_LINKEDIN_LINK" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7 0h4v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21h4v-7c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2h-.1V9h-3.8v12z"/>
             </svg>
@@ -194,7 +194,7 @@ title: Home
         </div>
 
         <!-- Email button -->
-        <a class="email-btn" href="mailto:REPLACE_YOUR_EMAIL">Email Me!</a>
+        <a class="email-btn" href="mailto:tfc5209@psu.edu">Email Me!</a>
       </div>
     </div>
 
