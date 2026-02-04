@@ -27,7 +27,7 @@ permalink: /media/
 
 /* Media card */
 .media-card{
-  margin-top: 1.8rem;
+  margin-top: 2.2rem;
   background: #ffffff;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.08);
@@ -49,6 +49,7 @@ permalink: /media/
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.6rem;
+  line-height: 1.2;
 }
 
 .media-header a{
@@ -87,20 +88,50 @@ permalink: /media/
   <h1>Media</h1>
 
   <p>
-    Coverage highlighting my research and its relevance to food safety, risk assessment,
-    and applied microbiology.
+    Selected media coverage highlighting my research on foodborne pathogens,
+    detection strategies, and food safety risk assessment.
   </p>
 
+  <!-- RAPID MICROBIOLOGY ARTICLE -->
   <div class="media-card">
     <div class="media-header">
-      <h2>Researchers develop model to guide milk processors’ food safety decisions</h2>
-      <a href="https://www.psu.edu/news/research/story/researchers-develop-model-guide-milk-processors-food-safety-decisions/"
+      <h2>
+        New enrichment broth finds <em>Bacillus cereus</em> in half of powdered infant foods sampled
+      </h2>
+      <a href="https://www.rapidmicrobiology.com/journal-club/new-enrichment-broth-finds-b-cereus-in-half-of-powdered-infant-foods-sampled"
          target="_blank" rel="noopener">
-        Read on PSU News →
+        Read on Rapid Microbiology →
       </a>
     </div>
 
-    <!-- Embedded, scrollable article -->
+    <iframe
+      class="media-frame"
+      src="https://www.rapidmicrobiology.com/journal-club/new-enrichment-broth-finds-b-cereus-in-half-of-powdered-infant-foods-sampled"
+      title="Rapid Microbiology Journal Club article on Bacillus cereus in powdered infant foods"
+      loading="lazy">
+    </iframe>
+
+    <div class="media-fallback">
+      If the article does not load due to browser or privacy settings,
+      <a href="https://www.rapidmicrobiology.com/journal-club/new-enrichment-broth-finds-b-cereus-in-half-of-powdered-infant-foods-sampled"
+         target="_blank" rel="noopener">
+        click here to view it directly on Rapid Microbiology.
+      </a>
+    </div>
+  </div>
+
+  <!-- PENN STATE ARTICLE -->
+  <div class="media-card">
+    <div class="media-header">
+      <h2>
+        Researchers develop model to guide milk processors’ food safety decisions
+      </h2>
+      <a href="https://www.psu.edu/news/research/story/researchers-develop-model-guide-milk-processors-food-safety-decisions/"
+         target="_blank" rel="noopener">
+        Read on Penn State News →
+      </a>
+    </div>
+
     <iframe
       class="media-frame"
       src="https://www.psu.edu/news/research/story/researchers-develop-model-guide-milk-processors-food-safety-decisions/"
@@ -116,4 +147,5 @@ permalink: /media/
       </a>
     </div>
   </div>
+
 </div>
