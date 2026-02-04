@@ -128,26 +128,29 @@ title: Home
   box-shadow: 0 16px 34px rgba(0,0,0,0.22);
 }
 
-/* --- BIO SECTION --- */
+/* --- BIO SECTION (wider) --- */
 .bio{
-  margin-top: 2.6rem;
+  margin: 3.2rem auto 0;
+  max-width: 1250px;          /* ⬅ wider than hero */
   background: #ffffff;
-  border-radius: 12px;
-  padding: 1.7rem 1.6rem;
+  border-radius: 14px;
+  padding: 2.2rem 2.4rem;     /* ⬅ more breathing room */
   border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .bio h2{
-  margin: 0 0 0.9rem 0;
+  margin: 0 0 1.1rem 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.0rem;
+  font-size: 2.1rem;
 }
+
 .bio p{
-  margin: 0.7rem 0;
-  font-size: 1.06rem;
-  line-height: 1.65;
+  margin: 0.9rem 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
   color: rgba(0,0,0,0.82);
+  max-width: 85ch;            /* ⬅ keeps lines readable */
 }
 
 /* --- PHOTO GRID: locked 2x2 --- */
