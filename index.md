@@ -37,10 +37,10 @@ nav,
 
 /* --- page-wide tweaks --- */
 .home-wrap{
-  max-width: 1100px;                 /* wider use of screen */
-  width: min(1100px, 96vw);          /* scale with screen */
+  max-width: 1100px;
+  width: min(1100px, 96vw);
   margin: 0 auto;
-  padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;  /* responsive side padding */
+  padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;
 }
 
 /* --- HERO --- */
@@ -62,7 +62,6 @@ nav,
   font-size: clamp(2.2rem, 3.2vw, 3.0rem);
   line-height: 1.05;
 
-  /* prevent breaking */
   white-space: nowrap;
   hyphens: none;
   overflow-wrap: normal;
@@ -139,9 +138,14 @@ nav,
 }
 .icon-btn svg{ width: 30px; height: 30px; }
 
+/* Existing icons */
 .ig{ background: #ff2ea6; }
 .tw{ background: #5fb7ff; }
 .li{ background: #0a66c2; }
+
+/* NEW: Google Scholar icon color */
+.gs{ background: #4285F4; } /* Google blue */
+
 .icon-btn svg path{ fill: white; }
 
 .email-btn{
@@ -165,10 +169,10 @@ nav,
 /* --- BIO (wider) --- */
 .bio{
   margin: 3.2rem auto 0;
-  max-width: 1250px;          /* wider */
+  max-width: 1250px;
   background: #ffffff;
   border-radius: 14px;
-  padding: 2.2rem 2.4rem;     /* more breathing room */
+  padding: 2.2rem 2.4rem;
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
@@ -184,7 +188,7 @@ nav,
   font-size: 1.08rem;
   line-height: 1.7;
   color: rgba(0,0,0,0.82);
-  max-width: 85ch;            /* readable line length */
+  max-width: 85ch;
 }
 
 /* --- PHOTO GRID: locked 2x2 --- */
@@ -207,12 +211,11 @@ nav,
   box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
 
-/* Fixed image height: consistent, no whitespace */
 .photo-img{
   width: 100%;
   height: 420px;
   overflow: hidden;
-  cursor: zoom-in; /* indicates click-to-zoom */
+  cursor: zoom-in;
 }
 
 .photo-img img{
@@ -289,6 +292,14 @@ nav,
           <a class="icon-btn li" href="https://www.linkedin.com/in/tscc/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7 0h4v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21h4v-7c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2h-.1V9h-3.8v12z"/>
+            </svg>
+          </a>
+
+          <!-- NEW: Google Scholar -->
+          <a class="icon-btn gs" href="https://scholar.google.com/citations?user=d_7ZFYIAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <!-- Simple Scholar-style icon (mortarboard) -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm-7 8.27V14c0 2.76 3.13 5 7 5s7-2.24 7-5v-2.73l-7 3.18-7-3.18z"/>
             </svg>
           </a>
 
