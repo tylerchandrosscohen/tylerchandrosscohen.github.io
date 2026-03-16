@@ -13,7 +13,7 @@ permalink: /publications/
 ">
 
   <!-- 2026) Microbiology Resource Announcements (ASM) -->
-  <a href="#"
+  <a href="https://journals.asm.org/doi/10.1128/mra.01260-25"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
     <img src="/assets/publications/IM8_MRA.png"
