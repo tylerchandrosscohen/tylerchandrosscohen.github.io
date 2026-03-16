@@ -12,6 +12,19 @@ permalink: /publications/
   align-items:start;
 ">
 
+  <!-- 2026) Microbiology Resource Announcements (ASM) -->
+  <a href="#"
+     target="_blank" rel="noopener"
+     style="text-decoration:none;">
+    <img src="/assets/publications/IM8_MRA.png"
+         alt="Whole-genome sequence and phenotypic characteristics of Bacillus cereus strain IM8 isolated from the Upper Fremont Glacier in Wyoming"
+         style="width:100%; height:auto; box-shadow: 0 10px 28px rgba(0,0,0,0.14); border-radius: 6px;">
+    <div style="margin-top:0.6rem; font-size:0.95rem; color:#2b2b2b; line-height:1.35;">
+      <strong>Whole-genome sequence and phenotypic characteristics of <em>Bacillus cereus</em> strain IM8 isolated from the Upper Fremont Glacier in Wyoming</strong>
+      <div style="opacity:0.85;">Microbiology Resource Announcements (2026)</div>
+    </div>
+  </a>
+
   <!-- 2025) Journal of Food Protection (ScienceDirect) - Infant foods -->
   <a href="https://www.sciencedirect.com/science/article/pii/S0362028X25002297"
      target="_blank" rel="noopener"
