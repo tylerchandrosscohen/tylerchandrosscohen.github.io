@@ -71,7 +71,7 @@ permalink: /posters/
   </a>
 
   <!-- GSD and Graduate Exhibition 2026 -->
-  <a class="poster-card" href="/assets/posters/GSD_YCV_2026.pdf" target="_blank" rel="noopener">
+  <a class="poster-card" href="/assets/posters/GSD_YCV 2026.pdf" target="_blank" rel="noopener">
     <div class="poster-title">
       Culture-independent detection of <em>Staphylococcus aureus</em> using multiple displacement amplification and CRISPR-Cas9 coupled with Nanopore sequencing
     </div>
@@ -81,7 +81,7 @@ permalink: /posters/
   </a>
 
   <!-- GSD 2026 -->
-  <a class="poster-card" href="/assets/posters/GSD_LW_2026.pdf" target="_blank" rel="noopener">
+  <a class="poster-card" href="/assets/posters/GSD_LW.pdf" target="_blank" rel="noopener">
     <div class="poster-title">
       Genotypic and Phenotypic Characterization of <em>Bacillus cereus</em> Isolates from Human Clinical Cases in Slovenia
     </div>
