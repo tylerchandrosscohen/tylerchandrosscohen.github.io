@@ -60,7 +60,7 @@ permalink: /posters/
 
 <div class="poster-grid">
 
-  <!-- GSD 2026 -->
+  <!-- GSD and Graduate Exhibition 2026 -->
   <a class="poster-card" href="/assets/posters/GSD2026.pdf" target="_blank" rel="noopener">
     <div class="poster-title">
       Characterization of <em>Bacillus cereus</em> Group Isolates from Infant Formula and Cereal by Whole-Genome Sequencing and Cytotoxicity
@@ -70,7 +70,7 @@ permalink: /posters/
     <div class="poster-link">View poster (PDF)</div>
   </a>
 
-  <!-- GSD 2026 -->
+  <!-- GSD and Graduate Exhibition 2026 -->
   <a class="poster-card" href="/assets/posters/GSD_YCV_2026.pdf" target="_blank" rel="noopener">
     <div class="poster-title">
       Culture-independent detection of <em>Staphylococcus aureus</em> using multiple displacement amplification and CRISPR-Cas9 coupled with Nanopore sequencing
