@@ -60,6 +60,16 @@ permalink: /posters/
 
 <div class="poster-grid">
 
+  <!-- GSD 2026 -->
+  <a class="poster-card" href="/assets/posters/GSD2026.pdf" target="_blank" rel="noopener">
+    <div class="poster-title">
+      Characterization of <em>Bacillus cereus</em> Group Isolates from Infant Formula and Cereal by Whole-Genome Sequencing and Cytotoxicity
+    </div>
+    <div class="poster-meta">GSD • 2026</div>
+    <div class="poster-tag">Infant foods • Cytotoxicity</div>
+    <div class="poster-link">View poster (PDF)</div>
+  </a>
+
   <!-- ABASM 2025 -->
   <a class="poster-card" href="/assets/posters/ABASM2025.pdf" target="_blank" rel="noopener">
     <div class="poster-title">
