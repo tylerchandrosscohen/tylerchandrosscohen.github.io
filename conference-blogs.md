@@ -13,11 +13,11 @@ permalink: /blog/
   padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;
 }
 
-.blog-wrap h1{
-  margin: 0 0 1.4rem 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.2rem;
-  line-height: 1.08;
+.blog-wrap{
+  max-width: 900px;              /* reduced from 1150 */
+  width: min(900px, 94vw);       /* slightly tighter viewport scaling */
+  margin: 0 auto;
+  padding: 1.6rem clamp(12px, 2.5vw, 28px) 2.2rem;  /* less whitespace */
 }
 
 /* ===== cards list ===== */
