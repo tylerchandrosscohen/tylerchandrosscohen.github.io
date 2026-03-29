@@ -5,16 +5,35 @@ permalink: /blog/
 ---
 
 <style>
+/* ===== Match Media page header spacing ===== */
+.site-header{
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.site-title{
+  line-height: 1.2;
+}
+
+.site-nav{
+  line-height: 1.2;
+}
+
+.site-nav a{
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
 /* ===== page wrapper ===== */
 .blog-wrap{
-  max-width: 1150px;
-  width: min(1150px, 96vw);
+  max-width: 900px;
+  width: min(900px, 94vw);
   margin: 0 auto;
-  padding: 2.2rem clamp(16px, 3vw, 48px) 2.8rem;
+  padding: 1.6rem clamp(12px, 2.5vw, 28px) 2.2rem;
 }
 
 .blog-wrap h1{
-  margin: 0 0 1.4rem 0;
+  margin: 0 0 0.6rem 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 3.2rem;
   line-height: 1.08;
@@ -27,7 +46,7 @@ permalink: /blog/
   gap: 1.8rem;
 }
 
-/* ===== card (matches your screenshot style) ===== */
+/* ===== card ===== */
 .post-card{
   background: #fff;
   border: 1px solid rgba(0,0,0,0.12);
@@ -58,7 +77,7 @@ permalink: /blog/
   }
 }
 
-/* ===== LEFT: media stack (logo + 2 photos) ===== */
+/* ===== LEFT: media stack ===== */
 .post-media{
   background: #f3f3f3;
   padding: 1.2rem;
@@ -79,10 +98,10 @@ permalink: /blog/
 
 .post-logo img{
   width: 100%;
-  height: 180px;
-  object-fit: contain; /* logos should not be cropped */
+  height: 100px;
+  object-fit: contain;
   display: block;
-  padding: 12px;       /* gives the logo breathing room */
+  padding: 10px;
   background: white;
 }
 
@@ -166,7 +185,6 @@ permalink: /blog/
               {% if post.conference_logo %}
                 <img src="{{ post.conference_logo | relative_url }}" alt="Conference logo for {{ post.title }}">
               {% elsif post.cover_image %}
-                <!-- fallback: if you don’t set a logo yet, use cover_image -->
                 <img src="{{ post.cover_image | relative_url }}" alt="Cover image for {{ post.title }}">
               {% else %}
                 <img src="/assets/img/placeholder-logo.png" alt="Conference logo placeholder">
