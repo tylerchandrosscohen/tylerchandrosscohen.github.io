@@ -1,26 +1,25 @@
 ---
 layout: default
-title: IAFP 2025
-date: 2025-07-30
-read_time: 2
-
-conference_logo: /assets/blog/logos/iafp2025.jpg
-
-photo1: /assets/blog/photos/iafp2025_4.jpg
-photo2: /assets/blog/photos/iafp2025_8.jpg
-
-landing_excerpt: "I attended the IAFP 2025 Annual Meeting in Cleveland, Ohio with members of the Kovac Lab. This year marked my final year serving as Treasurer of the IAFP Student Professional Development Group."
+title: Conference Blogs
+permalink: /blog/
 ---
 
 <style>
-/* ===== Match Media page header spacing ===== */
+/* ===== HEADER FIX (matches Media page) ===== */
 .site-header{
-  padding: 0.25rem 0;
+  padding: 0 !important;
+  min-height: auto !important;
   border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.site-header .wrapper{
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
 }
 
 .site-title{
   line-height: 1.2;
+  padding: 0 !important;
 }
 
 .site-nav{
@@ -28,174 +27,143 @@ landing_excerpt: "I attended the IAFP 2025 Annual Meeting in Cleveland, Ohio wit
 }
 
 .site-nav a{
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }
 
-/* ===== HARD CENTER FIX: neutralize theme wrapper offsets ===== */
-html, body { overflow-x: hidden; }
-
-.container, .wrapper, .page-content, main {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  left: auto !important;
-  right: auto !important;
+/* ===== page wrapper ===== */
+.blog-wrap{
+  max-width: 900px;
+  width: min(900px, 94vw);
+  margin: 0 auto;
+  padding: 1.6rem clamp(12px, 2.5vw, 28px) 2.2rem;
 }
 
-.post-wrap{
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* ===== POST WRAP ===== */
-.post-wrap{
-  max-width: 1000px;
-  width: min(1000px, 94vw);
-  padding: 2.4rem clamp(16px, 3vw, 48px) 3rem;
-}
-
-/* ===== HEADER ===== */
-.post-header{
-  text-align: center;
-  margin-bottom: 2.2rem;
-}
-
-.post-header h1{
+.blog-wrap h1{
+  margin: 0 0 0.6rem 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-  margin: 0 0 1.2rem 0;
+  font-size: 3.2rem;
+  line-height: 1.08;
 }
 
-/* conference logo */
-.post-logo{
-  max-width: 220px;
-  margin: 0 auto 1.2rem;
-  background: white;
-  padding: 0.8rem;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+/* ===== cards list ===== */
+.post-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+/* ===== card ===== */
+.post-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.post-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.10);
+}
+
+.post-link{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 900px){
+  .post-link{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== LEFT: media ===== */
+.post-media{
+  background: #f3f3f3;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
 }
 
 .post-logo img{
   width: 100%;
-  height: auto;
+  height: 100px;
   object-fit: contain;
-  display: block;
+  padding: 10px;
+  background: white;
 }
 
-/* ===== BODY TEXT ===== */
-.post-body{
-  font-size: 1.08rem;
-  line-height: 1.75;
-  color: rgba(0,0,0,0.84);
-}
-
-.post-body p{
-  margin: 0 0 1.2rem 0;
-}
-
-/* ===== PHOTO GRID ===== */
-.photo-grid{
-  margin-top: 2.4rem;
+/* ===== photos ===== */
+.photo-strip{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
 }
 
-.photo-card{
-  border-radius: 14px;
+.strip-photo{
+  height: 140px;
   overflow: hidden;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.14);
-  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
 }
 
-.photo-card img{
+.strip-photo img{
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
-  display: block;
-  transition: transform 200ms ease;
 }
 
-.photo-card img:hover{
-  transform: scale(1.04);
+/* ===== text ===== */
+.post-body{
+  padding: 1.5rem 1.6rem;
+}
+
+.post-title{
+  font-size: 2.25rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.post-excerpt{
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 </style>
 
-<div class="post-wrap">
+<div class="blog-wrap">
+  <h1>Conference Blogs</h1>
 
-  <!-- HEADER -->
-  <div class="post-header">
-    <h1>IAFP 2025</h1>
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post-card">
+        <a class="post-link" href="{{ post.url | relative_url }}">
 
-    <div class="post-logo">
-      <img src="/assets/blog/logos/iafp2025.jpg" alt="IAFP 2025 Conference Logo">
-    </div>
+          <div class="post-media">
+            <div class="post-logo">
+              <img src="{{ post.conference_logo | relative_url }}">
+            </div>
+
+            <div class="photo-strip">
+              <div class="strip-photo">
+                <img src="{{ post.photo1 | relative_url }}">
+              </div>
+              <div class="strip-photo">
+                <img src="{{ post.photo2 | relative_url }}">
+              </div>
+            </div>
+          </div>
+
+          <div class="post-body">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <p class="post-excerpt">{{ post.landing_excerpt }}</p>
+          </div>
+
+        </a>
+      </article>
+    {% endfor %}
   </div>
-
-  <!-- BODY -->
-  <div class="post-body">
-
-    <p>
-      I attended the IAFP 2025 Annual Meeting from July 27th to July 30th in Cleveland, Ohio, together with members of the Kovac Lab. This was my third time attending, and I can honestly say that each year has been more meaningful than the last. This year was especially significant for me, as it marked my final year serving as Treasurer of the IAFP Student Professional Development Group. Stepping down from this role was bittersweet—I have thoroughly enjoyed the opportunity to connect with students and professionals across the food safety field, and the experience has shaped me both personally and professionally.
-    </p>
-
-    <p>
-      Highlights from this year’s meeting included presenting my first-ever oral presentation, which was both nerve-wracking and rewarding, and getting to connect in person with many colleagues and LinkedIn connections. I also valued the chance to spend time with my lab mates outside of the lab setting, strengthening our bonds as a group. One particularly memorable moment was sharing a lunch with my advisor, Dr. Jasna Kovac, and one of our collaborators, an experience that reminded me of how important these personal connections are in fostering strong, productive partnerships.
-    </p>
-
-    <p>
-      IAFP continues to be one of my favorite conferences, and I look forward to returning in the years ahead. For me, this meeting is more than just a venue for presenting research—it is an annual tradition of reconnecting with collaborators, engaging with the broader food safety community, and continuing to grow as a scientist and professional.
-    </p>
-
-    <p><strong>See you in New Orleans!</strong></p>
-
-  </div>
-
-  <!-- PHOTO GRID -->
-  <div class="photo-grid">
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_1.jpg" alt="IAFP 2025 Photo 1">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_2.jpg" alt="IAFP 2025 Photo 2">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_3.jpg" alt="IAFP 2025 Photo 3">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_4.jpg" alt="IAFP 2025 Photo 4">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_5.jpg" alt="IAFP 2025 Photo 5">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_6.jpg" alt="IAFP 2025 Photo 6">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_7.jpg" alt="IAFP 2025 Photo 7">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_8.jpg" alt="IAFP 2025 Photo 8">
-    </div>
-
-    <div class="photo-card">
-      <img src="/assets/blog/photos/iafp2025_9.jpg" alt="IAFP 2025 Photo 9">
-    </div>
-
-  </div>
-
 </div>
