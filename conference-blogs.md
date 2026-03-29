@@ -79,10 +79,10 @@ permalink: /blog/
 
 .post-logo img{
   width: 100%;
-  height: 180px;
+  height: 100px;
   object-fit: contain; /* logos should not be cropped */
   display: block;
-  padding: 12px;       /* gives the logo breathing room */
+  padding: 10px;       /* gives the logo breathing room */
   background: white;
 }
 
