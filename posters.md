@@ -7,7 +7,7 @@ permalink: /posters/
 <style>
 .poster-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap:2rem;
   align-items:start;
 }
@@ -21,29 +21,24 @@ permalink: /posters/
   overflow:hidden;
   box-shadow:0 8px 22px rgba(0,0,0,0.12);
   border:1px solid rgba(0,0,0,0.06);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .poster-card:hover{
-  transform: translateY(-4px);
+  transform:translateY(-4px);
   box-shadow:0 14px 30px rgba(0,0,0,0.18);
 }
 
-.poster-image-wrap{
-  background:#eaeaea;
-  padding:1rem;
-}
-
-.poster-image{
+.poster-preview{
   width:100%;
-  height:auto;
+  height:430px;
+  border:none;
   display:block;
-  border-radius:8px;
-  border:1px solid rgba(0,0,0,0.08);
+  background:#dcdcdc;
 }
 
 .poster-content{
-  padding:1.2rem 1.2rem 1.3rem;
+  padding:1.15rem 1.2rem 1.3rem;
 }
 
 .poster-title{
@@ -61,7 +56,7 @@ permalink: /posters/
 
 .poster-tag{
   display:inline-block;
-  margin-top:0.85rem;
+  margin-top:0.8rem;
   margin-right:0.45rem;
   font-size:0.85rem;
   color:#333;
@@ -84,16 +79,13 @@ permalink: /posters/
 </style>
 
 <p class="poster-note">
-  Click any poster to open a larger version.
+  Click any poster to open the full-size PDF.
 </p>
 
 <div class="poster-grid">
 
-  <!-- GSD and Graduate Exhibition 2026 -->
   <a class="poster-card" href="/assets/posters/GSD2026.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD2026.jpg" alt="Poster preview for Bacillus cereus group isolates from infant formula and cereal">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD2026.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Characterization of <em>Bacillus cereus</em> Group Isolates from Infant Formula and Cereal by Whole-Genome Sequencing and Cytotoxicity
@@ -101,15 +93,12 @@ permalink: /posters/
       <div class="poster-meta">GSD and Graduate Exhibition • 2026</div>
       <span class="poster-tag">Infant foods</span>
       <span class="poster-tag">Cytotoxicity</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- GSD and Graduate Exhibition 2026 -->
   <a class="poster-card" href="/assets/posters/GSD_YCV 2026.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD_YCV_2026.jpg" alt="Poster preview for Staphylococcus aureus detection using MDA and CRISPR-Cas9 Nanopore sequencing">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD_YCV%202026.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Culture-independent detection of <em>Staphylococcus aureus</em> using multiple displacement amplification and CRISPR-Cas9 coupled with Nanopore sequencing
@@ -117,15 +106,12 @@ permalink: /posters/
       <div class="poster-meta">GSD and Graduate Exhibition • 2026</div>
       <span class="poster-tag">Nanopore</span>
       <span class="poster-tag">CRISPR-Cas9</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- GSD 2026 -->
   <a class="poster-card" href="/assets/posters/GSD_LW.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD_LW.jpg" alt="Poster preview for Bacillus cereus isolates from human clinical cases in Slovenia">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD_LW.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Genotypic and Phenotypic Characterization of <em>Bacillus cereus</em> Isolates from Human Clinical Cases in Slovenia
@@ -133,15 +119,12 @@ permalink: /posters/
       <div class="poster-meta">GSD • 2026</div>
       <span class="poster-tag">Clinical isolates</span>
       <span class="poster-tag">Slovenia</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- ABASM 2025 -->
   <a class="poster-card" href="/assets/posters/ABASM2025.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/ABASM2025.jpg" alt="Poster preview for targeted Nanopore sequencing of the O-antigen region in E. coli">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/ABASM2025.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Targeted Nanopore Sequencing of the O-Antigen Region in <em>E. coli</em> Using CRISPR Cleavage at <em>gndA</em>
@@ -149,15 +132,12 @@ permalink: /posters/
       <div class="poster-meta">ABASM • 2025</div>
       <span class="poster-tag">Genomics</span>
       <span class="poster-tag">Targeted sequencing</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- IAFP Europe 2025 -->
   <a class="poster-card" href="/assets/posters/IAFP2025EU.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/IAFP2025EU.jpg" alt="Poster preview for protein stress factors and psychrotolerant Bacillus cereus cytotoxicity">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/IAFP2025EU.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Effects of Protein Stress Factors on the Cytotoxicity of Psychrotolerant <em>Bacillus cereus</em> Isolates
@@ -165,15 +145,12 @@ permalink: /posters/
       <div class="poster-meta">IAFP Europe • 2025</div>
       <span class="poster-tag">Enterotoxins</span>
       <span class="poster-tag">Psychrotolerant</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- IAFP 2024 -->
   <a class="poster-card" href="/assets/posters/IAFP2024.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/IAFP2024.jpg" alt="Poster preview for psychrotolerant Bacillus cereus cytotoxicity across varied temperatures">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/IAFP2024.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Cytotoxicity Assessment of Psychrotolerant <em>Bacillus cereus</em> Isolates Across Varied Temperatures
@@ -181,15 +158,12 @@ permalink: /posters/
       <div class="poster-meta">IAFP • 2024</div>
       <span class="poster-tag">Food safety</span>
       <span class="poster-tag">Cytotoxicity</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- GSD 2024 -->
   <a class="poster-card" href="/assets/posters/GSD2024.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD2024.jpg" alt="Poster preview for Hemolysin BL transcription associated with regulatory SNPs">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD2024.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Variation in <em>Bacillus cereus</em> Hemolysin BL Transcription Associated with a SNP in the Transcriptional Regulatory Region
@@ -197,15 +171,12 @@ permalink: /posters/
       <div class="poster-meta">GSD • 2024</div>
       <span class="poster-tag">Regulation</span>
       <span class="poster-tag">SNP</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- ABASM 2024 -->
   <a class="poster-card" href="/assets/posters/Praul_ABASM_2024.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/Praul_ABASM_2024.jpg" alt="Poster preview for protein stress factors and cytotoxicity of Bacillus cereus supernatants">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/Praul_ABASM_2024.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Effects of Protein Stress Factors on the Cytotoxicity of Supernatants from Psychrotolerant <em>Bacillus cereus</em> Isolates
@@ -213,15 +184,12 @@ permalink: /posters/
       <div class="poster-meta">ABASM • 2024</div>
       <span class="poster-tag">Supernatants</span>
       <span class="poster-tag">Stability</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- IAFP 2023 -->
   <a class="poster-card" href="/assets/posters/IAFP2023.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/IAFP2023.jpg" alt="Poster preview for Bacillus cereus growth in a dairy food model">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/IAFP2023.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Growth Potential of <em>Bacillus cereus</em> Group Strains from Different Phylogenetic Groups in a Dairy Food Model
@@ -229,30 +197,24 @@ permalink: /posters/
       <div class="poster-meta">IAFP • 2023</div>
       <span class="poster-tag">Growth</span>
       <span class="poster-tag">Dairy model</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- GSD 2023 -->
   <a class="poster-card" href="/assets/posters/GSD2023.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD2023.jpg" alt="Poster preview for surface colonization and Hemolysin BL production in Bacillus cereus">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD2023.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Surface Colonization Area Was Associated with Phylogenetic Group and Hemolysin BL Production in <em>Bacillus cereus</em> sensu lato
       </div>
       <div class="poster-meta">GSD • 2023</div>
       <span class="poster-tag">Surface colonization</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- ABASM 2022 -->
   <a class="poster-card" href="/assets/posters/ABASM2022.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/ABASM2022.jpg" alt="Poster preview for antilisterial isolates in a raw milk cheese model">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/ABASM2022.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Isolation, Characterization, and Application of Antilisterial Isolates in a Raw Milk Cheese Model to Inhibit <em>Listeria monocytogenes</em>
@@ -260,22 +222,19 @@ permalink: /posters/
       <div class="poster-meta">ABASM • 2022</div>
       <span class="poster-tag">Antilisterial</span>
       <span class="poster-tag">Dairy</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
-  <!-- GSD 2022 -->
   <a class="poster-card" href="/assets/posters/GSD2022.pdf" target="_blank" rel="noopener">
-    <div class="poster-image-wrap">
-      <img class="poster-image" src="/assets/posters/thumbnails/GSD2022.jpg" alt="Poster preview for antilisterial isolates in a raw milk cheese model">
-    </div>
+    <iframe class="poster-preview" src="/assets/posters/GSD2022.pdf#view=FitH"></iframe>
     <div class="poster-content">
       <div class="poster-title">
         Isolation, Characterization, and Application of Antilisterial Isolates in a Raw Milk Cheese Model
       </div>
       <div class="poster-meta">GSD • 2022</div>
       <span class="poster-tag">Cheese model</span>
-      <div class="poster-link">Open larger poster</div>
+      <div class="poster-link">Open full poster</div>
     </div>
   </a>
 
