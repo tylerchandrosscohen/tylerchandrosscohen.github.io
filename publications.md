@@ -15,7 +15,7 @@ permalink: /publications/
   <a href="https://doi.org/10.1016/j.fm.2026.105166"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
-    <img src="/assets/publications/psychrotolerant_bc.png"
+    <img src="/assets/publications/psychro.png"
          alt="Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant Bacillus cereus group isolates"
          style="width:100%; height:auto; box-shadow: 0 10px 28px rgba(0,0,0,0.14); border-radius: 6px;">
     <div style="margin-top:0.6rem; font-size:0.95rem; color:#2b2b2b; line-height:1.35;">
