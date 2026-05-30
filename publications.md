@@ -11,7 +11,19 @@ permalink: /publications/
   gap: 2rem;
   align-items:start;
 ">
-
+  <!-- 2026) Food Microbiology -->
+  <a href="https://doi.org/10.1016/j.fm.2026.105166"
+     target="_blank" rel="noopener"
+     style="text-decoration:none;">
+    <img src="/assets/publications/psychrotolerant_bc.png"
+         alt="Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant Bacillus cereus group isolates"
+         style="width:100%; height:auto; box-shadow: 0 10px 28px rgba(0,0,0,0.14); border-radius: 6px;">
+    <div style="margin-top:0.6rem; font-size:0.95rem; color:#2b2b2b; line-height:1.35;">
+      <strong>Environmental modulation of cytotoxicity and virulence factor stability in <em>psychrotolerant Bacillus cereus</em> group isolates</strong>
+      <div style="opacity:0.85;">Food Microbiology (2026)</div>
+    </div>
+  </a>
+  
   <!-- 2026) Microbiology Resource Announcements (ASM) -->
   <a href="https://journals.asm.org/doi/10.1128/mra.01260-25"
      target="_blank" rel="noopener"
