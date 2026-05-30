@@ -19,7 +19,7 @@ permalink: /publications/
          alt="Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant Bacillus cereus group isolates"
          style="width:100%; height:auto; box-shadow: 0 10px 28px rgba(0,0,0,0.14); border-radius: 6px;">
     <div style="margin-top:0.6rem; font-size:0.95rem; color:#2b2b2b; line-height:1.35;">
-      <strong>Environmental modulation of cytotoxicity and virulence factor stability in <em>psychrotolerant Bacillus cereus</em> group isolates</strong>
+      <strong>Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant <em> Bacillus cereus</em> group isolates</strong>
       <div style="opacity:0.85;">Food Microbiology (2026)</div>
     </div>
   </a>
