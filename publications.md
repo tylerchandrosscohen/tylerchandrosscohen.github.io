@@ -1,9 +1,22 @@
 ---
+
 layout: page
 title: Publications
 permalink: /publications/
----
+-------------------------
 
+<div style="
+  display:grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 1fr);
+  gap: 2.5rem;
+  align-items:start;
+">
+
+  <!-- Peer-reviewed publications -->
+
+  <div>
+
+```
 <!-- Responsive grid -->
 <div style="
   display:grid;
@@ -11,6 +24,7 @@ permalink: /publications/
   gap: 2rem;
   align-items:start;
 ">
+
   <!-- 2026) Food Microbiology -->
   <a href="https://doi.org/10.1016/j.fm.2026.105166"
      target="_blank" rel="noopener"
@@ -19,12 +33,12 @@ permalink: /publications/
          alt="Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant Bacillus cereus group isolates"
          style="width:100%; height:auto; box-shadow: 0 10px 28px rgba(0,0,0,0.14); border-radius: 6px;">
     <div style="margin-top:0.6rem; font-size:0.95rem; color:#2b2b2b; line-height:1.35;">
-      <strong>Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant <em> Bacillus cereus</em> group isolates</strong>
+      <strong>Environmental modulation of cytotoxicity and virulence factor stability in psychrotolerant <em>Bacillus cereus</em> group isolates</strong>
       <div style="opacity:0.85;">Food Microbiology (2026)</div>
     </div>
   </a>
   
-  <!-- 2026) Microbiology Resource Announcements (ASM) -->
+  <!-- 2026) Microbiology Resource Announcements -->
   <a href="https://journals.asm.org/doi/10.1128/mra.01260-25"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -37,7 +51,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2025) Journal of Food Protection (ScienceDirect) - Infant foods -->
+  <!-- 2025) Journal of Food Protection - Infant foods -->
   <a href="https://www.sciencedirect.com/science/article/pii/S0362028X25002297"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -50,7 +64,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2025) Journal of Food Protection (ScienceDirect) - Campylobacter -->
+  <!-- 2025) Journal of Food Protection - Campylobacter -->
   <a href="https://www.sciencedirect.com/science/article/pii/S0362028X25001875"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -63,7 +77,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2025) Trends in Food Science & Technology (ScienceDirect) -->
+  <!-- 2025) Trends in Food Science & Technology -->
   <a href="https://www.sciencedirect.com/science/article/abs/pii/S092422442500322X"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -76,7 +90,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2024) Journal of Dairy Science (ScienceDirect) -->
+  <!-- 2024) Journal of Dairy Science -->
   <a href="https://www.sciencedirect.com/science/article/pii/S0022030224008968"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -89,7 +103,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2024) BMC Genomic Data (Springer) -->
+  <!-- 2024) BMC Genomic Data -->
   <a href="https://link.springer.com/article/10.1186/s12863-024-01195-0"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -102,7 +116,7 @@ permalink: /publications/
     </div>
   </a>
 
-  <!-- 2023) Microbiology Spectrum (ASM) -->
+  <!-- 2023) Microbiology Spectrum -->
   <a href="https://journals.asm.org/doi/10.1128/spectrum.01167-23"
      target="_blank" rel="noopener"
      style="text-decoration:none;">
@@ -116,3 +130,85 @@ permalink: /publications/
   </a>
 
 </div>
+```
+
+  </div>
+
+  <!-- Preprints sidebar -->
+
+  <aside style="
+    border-left: 1px solid #e0e0e0;
+    padding-left: 1.5rem;
+  ">
+
+```
+<h2 style="
+  margin-top:0;
+  margin-bottom:1rem;
+  font-size:1.35rem;
+">
+  Preprints
+</h2>
+
+<div style="
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+">
+
+  <!-- Preprint 1 -->
+  <div style="
+    background:#fafafa;
+    border:1px solid #e8e8e8;
+    border-radius:8px;
+    padding:1rem;
+  ">
+    <img src="/assets/publications/SNP_cytotoxicity.png"
+         alt="Single nucleotide polymorphisms associated with cytotoxicity of Bacillus cereus group strains in Caco-2 cells"
+         style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
+
+    <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
+      <strong>Single nucleotide polymorphisms associated with cytotoxicity of <em>Bacillus cereus</em> group strains in Caco-2 cells</strong>
+      <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+    </div>
+  </div>
+
+  <!-- Preprint 2 -->
+  <div style="
+    background:#fafafa;
+    border:1px solid #e8e8e8;
+    border-radius:8px;
+    padding:1rem;
+  ">
+    <img src="/assets/publications/Bparanthracis_AMR.png"
+         alt="Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical Bacillus paranthracis Strains"
+         style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
+
+    <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
+      <strong>Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical <em>Bacillus paranthracis</em> Strains</strong>
+      <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </aside>
+
+</div>
+
+<style>
+@media (max-width: 900px) {
+  div[style*="grid-template-columns: minmax(0, 3fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  aside {
+    border-left: none !important;
+    padding-left: 0 !important;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+</style>
