@@ -16,7 +16,7 @@ permalink: /publications/
     <!-- Responsive grid -->
     <div style="
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       align-items:start;
     ">
@@ -131,7 +131,8 @@ permalink: /publications/
   <!-- Preprints sidebar -->
   <aside style="
     border-left: 1px solid #e0e0e0;
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
+    margin-left: 1rem;
   ">
     <h2 style="
       margin-top:0;
@@ -148,38 +149,46 @@ permalink: /publications/
     ">
 
       <!-- Preprint 1 -->
-      <div style="
-        background:#fafafa;
-        border:1px solid #e8e8e8;
-        border-radius:8px;
-        padding:1rem;
-      ">
-        <img src="/assets/publications/SNP_cytotoxicity.png"
-             alt="Single nucleotide polymorphisms associated with cytotoxicity of Bacillus cereus group strains in Caco-2 cells"
-             style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
+      <a href="https://www.biorxiv.org/content/10.1101/2025.02.14.638278v1.abstract"
+         target="_blank" rel="noopener"
+         style="text-decoration:none;">
+        <div style="
+          background:#fafafa;
+          border:1px solid #e8e8e8;
+          border-radius:8px;
+          padding:1rem;
+        ">
+          <img src="/assets/publications/SNP_cytotoxicity.png"
+               alt="Single nucleotide polymorphisms associated with cytotoxicity of Bacillus cereus group strains in Caco-2 cells"
+               style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
 
-        <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
-          <strong>Single nucleotide polymorphisms associated with cytotoxicity of <em>Bacillus cereus</em> group strains in Caco-2 cells</strong>
-          <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+          <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
+            <strong>Single nucleotide polymorphisms associated with cytotoxicity of <em>Bacillus cereus</em> group strains in Caco-2 cells</strong>
+            <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+          </div>
         </div>
-      </div>
+      </a>
 
       <!-- Preprint 2 -->
-      <div style="
-        background:#fafafa;
-        border:1px solid #e8e8e8;
-        border-radius:8px;
-        padding:1rem;
-      ">
-        <img src="/assets/publications/Bparanthracis_AMR.png"
-             alt="Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical Bacillus paranthracis Strains"
-             style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
+      <a href="https://www.biorxiv.org/content/10.64898/2026.04.16.719033v1.abstract"
+         target="_blank" rel="noopener"
+         style="text-decoration:none;">
+        <div style="
+          background:#fafafa;
+          border:1px solid #e8e8e8;
+          border-radius:8px;
+          padding:1rem;
+        ">
+          <img src="/assets/publications/Bparanthracis_AMR.png"
+               alt="Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical Bacillus paranthracis Strains"
+               style="width:100%; height:auto; border-radius:6px; margin-bottom:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.10);">
 
-        <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
-          <strong>Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical <em>Bacillus paranthracis</em> Strains</strong>
-          <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+          <div style="font-size:0.90rem; line-height:1.4; color:#2b2b2b;">
+            <strong>Antimicrobial Resistance Profiling and Phenotypic Characterization of Archived Clinical <em>Bacillus paranthracis</em> Strains</strong>
+            <div style="margin-top:0.35rem; color:#666; font-size:0.82rem;">Preprint</div>
+          </div>
         </div>
-      </div>
+      </a>
 
     </div>
   </aside>
@@ -188,13 +197,14 @@ permalink: /publications/
 
 <style>
   @media (max-width: 900px) {
-    div[style*="grid-template-columns: minmax(0, 3fr)"] {
+    div[style*="grid-template-columns: repeat(2, 1fr)"] {
       grid-template-columns: 1fr !important;
     }
 
     aside {
       border-left: none !important;
       padding-left: 0 !important;
+      margin-left: 0 !important;
       border-top: 1px solid #e0e0e0;
       padding-top: 1.5rem;
       margin-top: 1.5rem;
