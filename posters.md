@@ -82,6 +82,21 @@ permalink: /posters/
 
 <div class="poster-grid">
 
+  <a class="poster-card" href="/assets/posters/FOODMICRO2026.pdf" target="_blank" rel="noopener">
+    <div class="poster-image-wrap">
+      <img class="poster-image" src="/assets/posters/thumbnails/FOODMICRO2026.jpg" alt="Thumbnail of FoodMicro 2026 poster">
+    </div>
+    <div class="poster-content">
+      <div class="poster-title">
+      Genotypic and Phenotypic Characterization of <em>Bacillus cereus</em> Isolates from Human Clinical Cases in Slovenia
+      </div>
+      <div class="poster-meta">FoodMicro • 2026</div>
+      <span class="poster-tag">Clinical isolates</span>
+      <span class="poster-tag">Slovenia</span>
+      <div class="poster-link">Open full poster</div>
+    </div>
+  </a>
+  
   <a class="poster-card" href="/assets/posters/GSD2026.pdf" target="_blank" rel="noopener">
     <div class="poster-image-wrap">
       <img class="poster-image" src="/assets/posters/thumbnails/GSD2026.jpg" alt="Thumbnail of GSD 2026 poster">
